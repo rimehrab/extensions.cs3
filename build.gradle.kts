@@ -38,12 +38,11 @@ subprojects {
 
     cloudstream {
         // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
-        // you can modify it to use other git hosting services, like gitlab
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/user/repo")
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "user/repo")
     }
 
     android {
-        namespace = "recloudstream"
+        namespace = "com.rimehrab"
 
         defaultConfig {
             minSdk = 21
@@ -69,9 +68,11 @@ subprojects {
     }
 
     dependencies {
+        val cloudstream by configurations
         val implementation by configurations
 
-        implementation("com.github.recloudstream.cloudstream:library-jvm:master")
+        // Stubs for all cloudstream classes
+        cloudstream("com.lagradost:cloudstream3:pre-release")
 
         // These dependencies can include any of those which are added by the app,
         // but you don't need to include any of them if you don't need them.
