@@ -1,4 +1,4 @@
-package com.redowan
+package com.rimehrab
 
 
 import com.lagradost.cloudstream3.Episode
@@ -33,9 +33,9 @@ import org.jsoup.nodes.Element
 //    providerTester.testLoad("http://10.16.100.244/player.php?play=40575")
 //}
 
-open class BdixICCFtpProvider : MainAPI() {
+open class ICCFtpProvider : MainAPI() {
     override var mainUrl = "http://10.16.100.244/"
-    override var name = "(BDIX) ICC Ftp"
+    override var name = "ICC FTP (BDIX)"
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val hasQuickSearch = false

@@ -1,12 +1,12 @@
-package com.redowan
+package com.rimehrab
 
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 import com.lagradost.cloudstream3.plugins.Plugin
 import android.content.Context
 
 @CloudstreamPlugin
-class BdixICCFtpPlugin: Plugin() {
+class ICCFtpPlugin: Plugin() {
     override fun load(context: Context) {
-        registerMainAPI(BdixICCFtpProvider())
+        registerMainAPI(ICCFtpProvider())
     }
 }
