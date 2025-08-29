@@ -36,5 +36,5 @@ cloudstream {
     )
     language = "bn"
 
-    iconUrl = "https://dflix.discoveryftp.net/assets/images/icon.png"
+    iconUrl = "https://rimehrab.github.io/extensions.cs3/DFLIX (BDIX)/icon.png"
 }
