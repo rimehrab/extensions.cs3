@@ -1,6 +1,5 @@
 package com.rimehrab
 
-import com.google.gson.Gson
 import com.lagradost.api.Log
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
@@ -52,9 +51,8 @@ open class AnimeDekhoProvider : MainAPI() {
         val href = this.selectFirst("a.lnk-blk")?.attr("href") ?: return null
         val title = this.selectFirst("header h2")?.text() ?: "null"
         var posterUrl = this.selectFirst("div figure img")?.attr("src")
-        if (posterUrl!!.contains("data:image"))
-        {
-            posterUrl=this.selectFirst("div figure img")?.attr("data-lazy-src")
+        if (posterUrl!!.contains("data:image")) {
+            posterUrl = this.selectFirst("div figure img")?.attr("data-lazy-src")
         }
         return newAnimeSearchResponse(title, Media(href, posterUrl).toJson(), TvType.Anime, false) {
             this.posterUrl = posterUrl
@@ -94,14 +92,13 @@ open class AnimeDekhoProvider : MainAPI() {
             val episodes = document.select("ul.seasons-lst li").mapNotNull {
                 val name = it.selectFirst("h3.title")?.ownText() ?: "null"
                 val href = it.selectFirst("a")?.attr("href") ?: return@mapNotNull null
-                val poster=it.selectFirst("div > div > figure > img")?.attr("src")
+                val poster = it.selectFirst("div > div > figure > img")?.attr("src")
                 val seasonnumber = it.selectFirst("h3.title > span")?.text().toString().substringAfter("S").substringBefore("-")
-                val season=seasonnumber.toIntOrNull()
-                newEpisode(Media(href, mediaType = 2).toJson())
-                {
-                    this.name=name
-                    this.posterUrl=poster
-                    this.season=season
+                val season = seasonnumber.toIntOrNull()
+                newEpisode(Media(href, mediaType = 2).toJson()) {
+                    this.name = name
+                    this.posterUrl = poster
+                    this.season = season
                 }
             }
             val recommendations = document.select("div.swiper-wrapper article").map {
@@ -113,7 +110,7 @@ open class AnimeDekhoProvider : MainAPI() {
                     poster = recPosterUrl,
                     mediaType = 0 // You can adjust this
                 )
-                val mediaJson = Gson().toJson(mediadata)
+                val mediaJson = mediadata.toJson()
                 newTvSeriesSearchResponse(recName, mediaJson, TvType.TvSeries) {
                     this.posterUrl = mediadata.poster
                 }
@@ -173,7 +170,5 @@ open class AnimeDekhoProvider : MainAPI() {
         return success
     }
 
-
     data class Media(val url: String, val poster: String? = null, val mediaType: Int? = null)
-
 }
