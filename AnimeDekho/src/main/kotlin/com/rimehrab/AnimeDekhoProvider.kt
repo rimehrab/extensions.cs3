@@ -1,4 +1,4 @@
-package com.phisher98
+package com.rimehrab
 
 import com.google.gson.Gson
 import com.lagradost.api.Log
@@ -10,7 +10,7 @@ import org.jsoup.nodes.Element
 
 open class AnimeDekhoProvider : MainAPI() {
     override var mainUrl = "https://animedekho.co"
-    override var name = "Anime Dekho"
+    override var name = "AnimeDekho"
     override val hasMainPage = true
     override var lang = "hi"
     override val hasDownloadSupport = true

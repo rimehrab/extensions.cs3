@@ -1,4 +1,4 @@
-package com.phisher98
+package com.rimehrab
 
 import com.lagradost.cloudstream3.plugins.BasePlugin
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
@@ -12,8 +12,6 @@ import com.lagradost.cloudstream3.extractors.Voe
 class AnimeDekhoPlugin: BasePlugin() {
     override fun load() {
         registerMainAPI(AnimeDekhoProvider())
-        registerMainAPI(OnepaceProvider())
-        registerMainAPI(HindiSubAnime())
         registerExtractorAPI(StreamRuby())
         registerExtractorAPI(Vidmolynet())
         registerExtractorAPI(GDMirrorbot())
