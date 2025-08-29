@@ -1,15 +1,15 @@
 // use an integer for version numbers
-version = 8
+version = 1
 
 android {
-    namespace = "com.redowan"
+    namespace = "com.rimehrab"
 }
 
 cloudstream {
     // All of these properties are optional, you can safely remove them
 
-    description = "Discovery BDIX Provider"
-    authors = listOf("Redowan")
+    description = "Discovery FTP BDIX Provider"
+    authors = listOf("Mehrab Mahmud Udoy, Redowan")
 
     /**
      * Status int as the following:
