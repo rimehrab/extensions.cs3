@@ -1,0 +1,77 @@
+[
+    {
+        "iconUrl": "https://rimehrab.github.io/extensions.cs3/AnimeDekho/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/rimehrab/extensions.cs3",
+        "fileSize": 21211,
+        "status": 1,
+        "language": "hi",
+        "authors": [
+            "Mehrab Mahmud Udoy, Phisher"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "Cartoon"
+        ],
+        "version": 1,
+        "internalName": "AnimeDekho",
+        "description": "AnimeDekho Provider",
+        "url": "https://raw.githubusercontent.com/rimehrab/extensions.cs3/builds/AnimeDekho.cs3",
+        "name": "AnimeDekho"
+    },
+    {
+        "iconUrl": "https://rimehrab.github.io/extensions.cs3/DFLIX (BDIX)/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/rimehrab/extensions.cs3",
+        "fileSize": 18087,
+        "status": 1,
+        "language": "bn",
+        "authors": [
+            "Mehrab Mahmud Udoy, Redowan"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AnimeMovie",
+            "OVA",
+            "Cartoon",
+            "AsianDrama",
+            "Others",
+            "Documentary"
+        ],
+        "version": 1,
+        "internalName": "DFLIX (BDIX)",
+        "description": "Discovery FTP BDIX Provider",
+        "url": "https://raw.githubusercontent.com/rimehrab/extensions.cs3/builds/DFLIX (BDIX).cs3",
+        "name": "DFLIX (BDIX)"
+    },
+    {
+        "iconUrl": "https://rimehrab.github.io/extensions.cs3/ICC FTP (BDIX)/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/rimehrab/extensions.cs3",
+        "fileSize": 13257,
+        "status": 1,
+        "language": "bn",
+        "authors": [
+            "Mehrab Mahmud Udoy, Redowan"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AnimeMovie",
+            "OVA",
+            "Cartoon",
+            "AsianDrama",
+            "Others",
+            "Documentary"
+        ],
+        "version": 1,
+        "internalName": "ICC FTP (BDIX)",
+        "description": "ICC FTP BDIX Provider",
+        "url": "https://raw.githubusercontent.com/rimehrab/extensions.cs3/builds/ICC FTP (BDIX).cs3",
+        "name": "ICC FTP (BDIX)"
+    }
+]
