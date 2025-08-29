@@ -26,7 +26,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import org.jsoup.nodes.Element
 
 //suspend fun main() {
-//    val providerTester = com.lagradost.cloudstreamtest.ProviderTester(BdixICCFtpProvider())
+//    val providerTester = com.lagradost.cloudstreamtest.ProviderTester(ICCFtpProvider())
 ////    providerTester.testAll()
 ////    providerTester.testMainPage(verbose = true)
 ////   providerTester.testSearch(query = "dragon", verbose = true)
